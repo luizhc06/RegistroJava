@@ -61,3 +61,40 @@ public class pessoa1 {
             return id;
         }
     }
+
+    import java.util.*;
+
+public class Pessoa2 {
+
+	public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Bem-vindo(a) ao sistema de registro!");
+        
+        System.out.print("Digite o nome: ");
+        String nome = scanner.nextLine();
+
+        System.out.print("Digite a data de nascimento (dd/mm/aaaa): ");
+        String dataNascimento = scanner.nextLine();
+
+        System.out.print("Digite o Gmail: ");
+        String gmail = scanner.nextLine();
+        
+        System.out.print("Digite a sua Senha: ");
+        String senha = scanner.nextLine();
+
+        System.out.print("Digite o CPF: ");
+        String cpf = scanner.nextLine();
+
+        System.out.print("Digite o endereço: ");
+        String endereco = scanner.nextLine();
+
+        System.out.print("A pessoa é estudante ou trabalhadora? ");
+        String papel = scanner.nextLine();
+
+        Pessoa pessoa = new Pessoa(nome, dataNascimento, gmail, cpf, endereco, papel);
+
+        System.out.println("\nRegistro criado:\n" + pessoa);	
+        
+    }
+}
